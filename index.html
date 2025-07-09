@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suficy | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px;
+      min-height: 100vh;
+      background: url('https://i.gifer.com/7plQ.gif') center/cover no-repeat;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 0;
+    }
+
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    header h1 span {
+      color: #fff;
+      background: linear-gradient(90deg, #00ffe7, #7f00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      background: #fff;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00ffe7;
+      color: #000;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+      background: #141414;
+    }
+
+    .feature {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #2a2a2a;
+      text-align: left;
+    }
+
+    .feature h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #00ffe7;
+    }
+
+    .feature p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #666;
+      background: #0e0e0e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span>Suficy</span> Developer Portfolio</h1>
+    <p>Automatización con Discord.js, Bots avanzados, Diseño Web, HTML, Python y más.</p>
+    <div class="buttons">
+      <a href="https://discord.com/users/tuusuario" class="btn">Hablar por Discord</a>
+      <a href="#features" class="btn">Ver Proyectos</a>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>🤖 Voflix Bot</h3>
+      <p>Bot de Discord con verificación, tickets, economía y sistema de staff.</p>
+    </div>
+    <div class="feature">
+      <h3>🌆 Tijuana RP</h3>
+      <p>Servidor de roleplay serio, realista y activo en expansión constante.</p>
+    </div>
+    <div class="feature">
+      <h3>🎯 Skills</h3>
+      <p>JS, Python, HTML, CSS, diseño de interfaces, lógica de bots y automatización.</p>
+    </div>
+    <div class="feature">
+      <h3>📩 Contacto</h3>
+      <p>Discord: <code>Suficy.not</code><br>¡Consultas, soporte o colaboraciones!</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Suficy. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
